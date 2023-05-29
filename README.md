@@ -1,2 +1,5 @@
-# GenETH
-Generates a random Ethereum private key and retrieves its balance (~15K keys per minute) 🦇
+# GenETH - Usage
+
+> ``npm i``
+
+> ``node index.js``
