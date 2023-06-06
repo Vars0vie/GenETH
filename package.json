@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "couleurs": "^6.0.11",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "web3": "^1.10.0"
+  }
+}
