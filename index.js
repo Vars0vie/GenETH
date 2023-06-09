@@ -3,7 +3,15 @@ const crypto = require('crypto');
 const fs = require('fs');
 const colors = require('couleurs');
 
+// =======================
+//      AVOID ERRORS
+// =======================
+
 process.on('uncaughtException', function (err) {});
+
+// =======================
+//       PROVIDERS
+// =======================
 
 const providers = [
   'https://eth.llamarpc.com',
@@ -12,6 +20,10 @@ const providers = [
   'https://rpc.mevblocker.io',
   'https://ethereum.publicnode.com'
 ];
+
+// =======================
+//       FUNCTIONS
+// =======================
 
 function getRandomProvider() {
   const randomIndex = Math.floor(Math.random() * providers.length);
@@ -39,5 +51,9 @@ function generateAndCheck() {
     });
   }
 }
+
+// =======================
+//     INTERVAL IN MS
+// =======================
 
 setInterval(generateAndCheck, 50);
